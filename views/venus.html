@@ -1,17 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title> The Solar System | Venus</title>
-</head>
-<body>
-  <h1> Welcome to the Venus Page! </h1>
-  <p>
-    Click on a planet to know more about it: 
-  </p>
+<% include partials/header.ejs %>
+  <h1> Welcome to Venus! </h1>
+  <div class="text-left" id="planet">
+     <img class="rounded float-left" src="/img/venus.jpg" alt="Venus" height="auto" width="400px"; />
   
-  <a href="/"> Home </a> <br />
-  <a href="/mercury"> Mercury </a> <br />
-  Earth <br />
-</body>
-</html>
+    <span>
+     &bull; Venus is the second planet to the Sun and is often referred to as the twin sister planet of Earth. <br /><br />
+
+    &bull; It is believed that Venus once had water, but it has been boiled away from the greenhouse effect. <br /><br />
+
+    &bull; Venus is the hottest planet in the Solar System even though it is further away than Mercury from the Sun.<br /><br />
+    </span>
+    
+  </div>
+ <div id="reference" class="text-left">
+    <strong>Reference: </strong><a href="https://theplanets.org/venus/">https://theplanets.org/venus/</a>
+    </div>
+
+  <script>
+  $(document).ready(function(){
+    $("#venus").addClass("active");
+    $("title").html("The Solar System | Venus");
+  });
+  </script>
+  <% include partials/footer.ejs %>

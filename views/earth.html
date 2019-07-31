@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+  <h1> Welcome to Earth! </h1>
+  <div class="text-left" id="planet">
+     <img class="rounded float-left" src="/img/earth.jpg" alt="Earth" height="auto" width="400px"; />
+  
+    <span>
+     &bull; Earth is the third planet from the Sun. It has a moon that is tidally locked (one face is only visible from Earth), and it causes the oceanic tides within Earth. <br /><br />
+    &bull; <strong>Interesting fact: </strong>The Earth's rotation is slowing down and in about 140 million years the day will increase from 24 hours to 25 hours. <br /><br />
+    &bull; Currently Earth is the only known planet to support life.<br /><br />
+    </span>
+    
+  </div>
+ <div id="reference" class="text-left">
+    <strong>Reference: </strong><a href="https://theplanets.org/earth/">https://theplanets.org/earth/</a>
+    </div>
+
+  <script>
+  $(document).ready(function(){
+    $("#earth").addClass("active");
+    $("title").html("The Solar System | Earth");
+  });
+  </script>
+  <% include partials/footer.ejs %>

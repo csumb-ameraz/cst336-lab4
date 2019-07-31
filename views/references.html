@@ -1,0 +1,18 @@
+<% include partials/header.ejs %>
+  <h1> Referenes</h1>
+  <div class="text-left" id="planet">
+  
+    <span>
+    <strong>Mercury: </strong><a href="https://theplanets.org/mercury/">https://theplanets.org/mercury/</a><br />
+    <strong>Venus: </strong><a href="https://theplanets.org/venus/">https://theplanets.org/venus/</a><br />
+    <strong>Earth: </strong><a href="https://theplanets.org/earth/">https://theplanets.org/earth/</a><br />
+    </span>
+    
+  </div>
+  <script>
+  $(document).ready(function(){
+    $("#references").addClass("active");
+    $("title").html("The Solar System | References");
+  });
+  </script>
+  <% include partials/footer.ejs %>

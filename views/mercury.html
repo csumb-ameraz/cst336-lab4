@@ -1,17 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title> The Solar System | Mercury</title>
-</head>
-<body>
-  <h1> Welcome to the Mercury Page! </h1>
-  <p>
-    Click on a planet to know more about it: 
-  </p>
+<% include partials/header.ejs %>
+  <h1> Welcome to Mercury! </h1>
+  <div class="text-left" id="planet">
+     <img class="rounded float-left" src="/img/mercury.jpg" alt="Mercury" height="auto" width="400px"; />
   
-  <a href="/"> Home </a> <br />
-  <a href="/venus"> Venus </a> <br />
-  Earth <br />
-</body>
-</html>
+    <span>
+     &bull; Mercury is the first planet from the sun and is currently the smallest planet within our solar system.  <br /><br />
+     &bull; It is tidally locked to the sun, so only one face is facing the sun at all times. <br /><br />
+     &bull; It orbits the sun every 88 Earth days, but it rotates on its own axis every 176 Earth days. <br /><br />
+    </span>
+    
+  </div>
+ <div id="reference" class="text-left">
+    <strong>Reference: </strong><a href="https://theplanets.org/mercury/">https://theplanets.org/mercury/</a>
+    </div>
+
+  <script>
+  $(document).ready(function(){
+    $("#mercury").addClass("active");
+    $("title").html("The Solar System | Mercury");
+  });
+  </script>
+  <% include partials/footer.ejs %>

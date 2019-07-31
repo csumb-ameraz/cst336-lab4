@@ -4,11 +4,12 @@
   <img src="/img/solar_system.jpg" alt="The Solar System" />
   
   <p>
-    Click on a planet to know more about it: 
+    Click on a planet in the menu above to know more about it!
   </p>
   
-  <a href="/mercury"> Mercury </a> <br />
-  <a href="/venus"> Venus </a> <br />
-  Earth <br />
-
+  <script>
+  $(document).ready(function(){
+    $("#home").addClass("active");
+  });
+  </script>
   <% include partials/footer.ejs %>
